@@ -27,7 +27,7 @@ if __name__ == "__main__":
             }
             user_tasks.append(task_dict)
             
-            all_tasks[user_id] = user_tasks
-            
-            with open("todo_all_employees.json", "w") as json_file:
-                json.dump(all_tasks, json_file)
+        all_tasks[user_id] = user_tasks
+
+    with open("todo_all_employees.json", "w") as json_file:
+        json.dump(all_tasks, json_file)
