@@ -28,7 +28,8 @@ if __name__ == "__main__":
         total_tasks = len(todo_data)
         num_done_tasks = len(done_tasks)
 
-        print("Employee {} is done with tasks({}/{}):".format(user_data['name'], num_done_tasks, total_tasks))
+        print("Employee {} is done with tasks({}/{}):"
+            .format(user_data['name'], num_done_tasks, total_tasks))
         for task in done_tasks:
             print("\t{}".format(task['title']))
 
